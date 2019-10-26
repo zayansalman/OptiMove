@@ -11,11 +11,15 @@ import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import TC from '../TC';
+import NavBar from '../NavBar'; 
+
+
 import * as ROUTES from '../../constants/routes'
 const App = () => (
   <Router>
     <div>
     <Navigation />
+    <NavBar />
     <hr/>
     {/*  */}
     <Route exact path={ROUTES.LANDING} component={LandingPage} />
