@@ -10,7 +10,10 @@ import PasswordForgetPage from '../PasswordForget';
 import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
+import FindProperty from '../FindProperty';
 import TC from '../TC';
+
+import * as ROUTES from '../../constants/routes';
 
 import NavBar from '../NavBar'; 
 import OptLoc from '../OptLoc'; 
@@ -34,6 +37,9 @@ const App = () => (
     <Route path={ROUTES.ACCOUNT} component={AccountPage} />
     <Route path={ROUTES.ADMIN} component={AdminPage} />
     <Route path={ROUTES.TC} component={TC} />
+
+    <Route path={ROUTES.FINDPROPERTY} component={FindProperty} />
+
     <Route path={ROUTES.CrimeRate} component={CrimeRate} />
     <Route path={ROUTES.PtoGeoCord} component={PtoGeoCord} />
     
