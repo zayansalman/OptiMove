@@ -23,7 +23,7 @@ const Navigation = () => (
       {/* <li>
         <Link to={ROUTES.TC}>TC</Link>
       </li> */}
-      </li>
+      {/* </li> */}
       <li>
         <Link to={ROUTES.CrimeRate}>CrimeRate</Link>
       </li>

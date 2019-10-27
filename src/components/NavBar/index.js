@@ -6,12 +6,6 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form"; 
 
-import Geocode from "react-geocode";
-import { func } from "prop-types";
-
-
-
-
 class MyNav extends React.Component{
     constructor(props){
         super(props);
@@ -40,13 +34,16 @@ class MyNav extends React.Component{
             />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Control type="textarea" placeholder="Type another postcode here" />  
+            <Form.Control type="textarea" 
+            placeholder="Type another postcode here"
+            componentClass="input"
+             />  
             </Form.Group>
 
             <Button variant="primary" type="submit">
     Submit
   </Button>
-    </Form>
+            </Form>
     <p>entered data test: {this.state.postcode}</p>
     
     

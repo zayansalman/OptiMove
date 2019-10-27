@@ -13,7 +13,7 @@ class PtoGeoCord extends React.Component {
     
       async componentDidMount() {
     
-        const url = "http://api.postcodes.io/postcodes/UB83PH";
+        const url = "http://api.postcodes.io/postcodes/" + "UB83PH";
         const response = await fetch(url);
         const data = await response.json();
         var cord1= JSON.stringify(data);
@@ -23,7 +23,7 @@ class PtoGeoCord extends React.Component {
         var LatitudeCord1 = (rarry[26]).slice(1,-1);
 
         this.setState({Lat1: LatitudeCord1,Long1: LongitudeCord1, loading: false})
-        const url2 = "http://api.postcodes.io/postcodes/UB83PH";
+        const url2 = "http://api.postcodes.io/postcodes/"+"E11LP";
         const response2 = await fetch(url2);
         const data2 = await response2.json();
         var cord2 = JSON.stringify(data2);
