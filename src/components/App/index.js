@@ -11,6 +11,9 @@ import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import TC from '../TC';
+
+import NavBar from '../NavBar'; 
+import OptLoc from '../OptLoc'; 
 import CrimeRate from '../CrimeRate';
 import PtoGeoCord from '../PtoGeoCord';
 //<ROUTES path={ROUTES.CrimeRate} component={CrimeRate} />
@@ -19,9 +22,11 @@ const App = () => (
   <Router>
     <div>
     <Navigation />
+    <NavBar />
+  
     <hr/>
     {/*  */}
-    <Route exact path={ROUTES.LANDING} component={LandingPage} />
+    {/* <Route exact path={ROUTES.LANDING} component={LandingPage} /> */}
     <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
     <Route path={ROUTES.SIGN_IN} component={SignInPage} />
     <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
