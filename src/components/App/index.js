@@ -12,6 +12,7 @@ import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import TC from '../TC';
 import CrimeRate from '../CrimeRate';
+import PtoGeoCord from '../PtoGeoCord';
 //<ROUTES path={ROUTES.CrimeRate} component={CrimeRate} />
 import * as ROUTES from '../../constants/routes'
 const App = () => (
@@ -29,6 +30,7 @@ const App = () => (
     <Route path={ROUTES.ADMIN} component={AdminPage} />
     <Route path={ROUTES.TC} component={TC} />
     <Route path={ROUTES.CrimeRate} component={CrimeRate} />
+    <Route path={ROUTES.PtoGeoCord} component={PtoGeoCord} />
     
     </div>
     
