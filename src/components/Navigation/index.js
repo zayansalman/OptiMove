@@ -22,6 +22,12 @@ const Navigation = () => (
       <li>
         <Link to={ROUTES.TC}>TC</Link>
       </li>
+      <li>
+        <Link to={ROUTES.CrimeRate}>CrimeRate</Link>
+      </li>
+      <li>
+        <Link to={ROUTES.PtoGeoCord}>PtoGeoCord</Link>
+      </li>
     </ul>
   </div>
 );
