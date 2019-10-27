@@ -5,7 +5,7 @@ import * as ROUTES from '../../constants/routes';
 const Navigation = () => (
   <div>
     <ul>
-    <li>
+    {/* <li>
         <Link to={ROUTES.SIGN_IN}>Sign In</Link>
       </li>
       <li>
@@ -19,10 +19,10 @@ const Navigation = () => (
       </li>
       <li>
         <Link to={ROUTES.ADMIN}>Admin</Link>
-      </li>
-      <li>
+      </li> */}
+      {/* <li>
         <Link to={ROUTES.TC}>TC</Link>
-      </li>
+      </li> */}
     </ul>
   </div>
 );

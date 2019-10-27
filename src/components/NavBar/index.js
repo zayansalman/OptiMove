@@ -6,6 +6,12 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form"; 
 
+import Geocode from "react-geocode";
+import { func } from "prop-types";
+
+
+
+
 class MyNav extends React.Component{
     constructor(props){
         super(props);
@@ -14,13 +20,16 @@ class MyNav extends React.Component{
         handleChange = event => {
             this.setState({postcode: event.target.value}); 
         };
+
+        
     render(){
   return ( 
     <React.Fragment>
   <Container className="p-3">
     <Jumbotron>
-      <h1 className="header">Enter your locations</h1>
+      <h1 className="header">OptiMove</h1>
         <Form>
+          <h3>Enter your locations</h3>
             <Form.Group controlId="exampleForm.ControlTextarea1">
              <Form.Control 
              type="textarea" 
@@ -39,42 +48,14 @@ class MyNav extends React.Component{
   </Button>
     </Form>
     <p>entered data test: {this.state.postcode}</p>
+    
+    
     </Jumbotron>
     
   </Container>
  </React.Fragment>
   )
+
     }
-}
-
-// class MyNav extends React.Component {
-
-//     constructor(props){
-//       super(props);
-//       this.state = { username: '' };
-//     }
-   
-//     handleChange = event => {
-//       this.setState({ username: event.target.value });
-//     };
-   
-//     render() {
-//       return (
-//         <React.Fragment>
-//           <form>
-//             <label htmlFor="username">username</label>
-//             <input
-//               type="text"
-//               name="username"
-//               value={this.state.username}
-//               onChange={this.handleChange}
-//             />
-//           </form>
-   
-//           <h3>Your username is: {this.state.username}</h3>
-//         </React.Fragment>
-//       );
-//     }
-//    }
-
+};
 export default MyNav; 
