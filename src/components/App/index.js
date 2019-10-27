@@ -20,7 +20,7 @@ import OptLoc from '../OptLoc';
 import CrimeRate from '../CrimeRate';
 import PtoGeoCord from '../PtoGeoCord';
 //<ROUTES path={ROUTES.CrimeRate} component={CrimeRate} />
-import * as ROUTES from '../../constants/routes'
+
 const App = () => (
   <Router>
     <div>
