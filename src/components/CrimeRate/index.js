@@ -20,7 +20,7 @@ class CrimeRate extends React.Component {
         //var rarry = JSON.stringify(redbul);
         this.setState({ret: redbul, loading: false})
         Cr1=redbul;
-        const url2 = "https://data.police.uk/api/crimes-street/all-crime?poly=51.5366,0.0758:52.794,0.238:52.130,0.478";
+        const url2 = "https://data.police.uk/api/crimes-street/all-crime?poly=51.5366,0.0758:52.604,0.238:52.130,0.478";
         const response2 = await fetch(url2);
         const data2 = await response2.json();
         var monster = data2.length;
@@ -49,8 +49,8 @@ class CrimeRate extends React.Component {
         // }
         return (
           <body>
-            <p>{this.state.ret}</p>
-            <p>{this.state.rat}</p>
+            <p>Location 1 Quaterly crime rate{this.state.ret}</p>
+            <p>Location 2 Quaterly crime rate{this.state.rat}</p>
             <p>{this.state.stabed}</p>
             </body>
         );

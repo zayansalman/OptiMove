@@ -1,5 +1,9 @@
 import React from 'react'
-class PtoGeoCord extends React.Component {
+import MyNav from '../NavBar'
+
+// var PostInput1 = MyNav.PostInput1;
+// var PostInput2 = MyNav.PostInput2;
+class PtoGeoCord extends MyNav {
 
     
     state = {
@@ -36,6 +40,9 @@ class PtoGeoCord extends React.Component {
        
         console.log("DEATH");
         console.log("SLOW");
+
+        console.log(MyNav.hello);
+        //console.log(PostInput2);
        // console.log(Shank);
       }
     
