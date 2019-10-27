@@ -11,10 +11,12 @@ import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import TC from '../TC';
+
 import NavBar from '../NavBar'; 
 import OptLoc from '../OptLoc'; 
-
-
+import CrimeRate from '../CrimeRate';
+import PtoGeoCord from '../PtoGeoCord';
+//<ROUTES path={ROUTES.CrimeRate} component={CrimeRate} />
 import * as ROUTES from '../../constants/routes'
 const App = () => (
   <Router>
@@ -32,6 +34,9 @@ const App = () => (
     <Route path={ROUTES.ACCOUNT} component={AccountPage} />
     <Route path={ROUTES.ADMIN} component={AdminPage} />
     <Route path={ROUTES.TC} component={TC} />
+    <Route path={ROUTES.CrimeRate} component={CrimeRate} />
+    <Route path={ROUTES.PtoGeoCord} component={PtoGeoCord} />
+    
     </div>
     
   </Router>
